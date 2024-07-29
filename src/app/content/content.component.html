@@ -1,0 +1,31 @@
+<section class="content-container">
+  <section class="content-messages">
+    <ul>
+      @for (message of messages; track message.id) {
+        <app-message sender="{{message.sender}}" content="{{message.content}}"></app-message>
+      } @if (inputMessage.trim().length > 0) {
+        <app-message sender="YOU" content="{{ inputMessage }}"></app-message>
+      }
+    </ul>
+  </section>
+
+  <div class="content-input">
+    <button>
+      <img class="img-clip" src="../../assets/images/paperclip.svg" />
+    </button>
+
+    <input
+      class="input-search"
+      [(ngModel)]="inputMessage"
+      (keydown.enter)="send()"
+      type="text"
+      placeholder="Message ChatGPT"
+    />
+    <button (click)="send()">
+      <img
+        class="input-image"
+        src="../../assets/images/arrow-up-circle-fill.svg"
+      />
+    </button>
+  </div>
+</section>
