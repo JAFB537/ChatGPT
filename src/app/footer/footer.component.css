@@ -1,0 +1,22 @@
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: .875rem;
+    line-height: 1.25rem;
+    margin: 10px 0 10px 0;
+    padding: 0;
+
+    & span {
+        margin: 0;
+        padding: 0;
+    }
+
+    & a {
+        list-style: none;
+        text-decoration: none;
+        font-weight: bold;
+        color: inherit;
+    }
+}
