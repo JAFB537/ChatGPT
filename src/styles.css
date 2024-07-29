@@ -1,1 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+  /* Color del fondo */
+  background: #212121;
+
+  /* Color del texto blanco */
+  color: #fff;
+
+  /* Fuente de texto */
+  font-family: -apple-system, BlinkMacSystemFont,
+    /* para Safari y otros navegadores en macOS */ "Segoe UI",
+    /* para Chrome y otros navegadores en macOS */ Roboto,
+    /* para Windows */ Oxygen, /* fuente de sistema en Android */ Cantarell,
+    /* fuente de sistema en KDE */ Fira Sans,
+    /* fuente de sistema en GNOME */ Droid Sans,
+    /* fuente de sistema en Firefox */ Helvetica Neue,
+    /* fuente de sistema en Android */ Arial,
+    /* fuente de sistema en macOS */ sans-serif; /* fuente de sistema en la mayoría de los sistemas */
+
+  /* Altura de línea para mejorar la legibilidad */
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
